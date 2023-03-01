@@ -130,7 +130,6 @@ body{
     font-size: 15px;
     font-weight: 500;
     color: #37423b;
-    white-space: nowrap;
     transition: 0.3s;
 }
 .nav-list .btn a{
@@ -166,7 +165,7 @@ body{
 /*font-family: 'Roboto', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;*/
 .banner-sec{
-	background: linear-gradient(to top, #00000014,#07060696), url("../assets/hero-bg.jpg");
+	background: linear-gradient(#00000014,#07060696), url("../assets/hero-bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	padding: 88px 0;
@@ -319,19 +318,16 @@ font-family: 'Source Sans Pro', sans-serif;*/
 }
 .content-item2 h1{
 	text-align: center;
-	padding-bottom: 30px;
-	padding-top: 40px;
-
-
+	padding: 30px 0;
 }
 .content-item2 h1 i{
 	color: rgb(95, 207, 128);
 	background: rgb(236, 249, 240);
-	padding: 18px;
-	line-height: 1;
-	border-radius: 50%;
-	font-size: 32px;
-	margin-bottom: 30px;
+	font-size: 32px;/
+	border-radius: 50px;
+	width: 65px;
+	height: 65px;
+	line-height: 2;
 }
 .content-item2 h2{
 	text-align: center;
@@ -514,6 +510,9 @@ vertical-align: middle;
 	font-size: 18px;
     color: #657a6d;
 }
+.sec-title{
+	position: relative;
+}
 .content3 .sec-title h5{
 margin-left: 15px;
 font-family: 'Poppins', sans-serif;
@@ -535,9 +534,10 @@ color: #AAAAAA;
     content: "";
     width: 120px;
     height: 1px;
-    display: inline-block;
     background: #9ae1af;
-    margin: 4px 10px;
+    position: absolute;
+    top: 8px;
+    left: 110px;
 }
 .authors .author1{
 	border: 1px solid #6969692b;
@@ -666,12 +666,15 @@ color: #AAAAAA;
 	  font-family: 'Open Sans', sans-serif;
 	  font-size: 15px;
 }
+
 .newsletter input[type=email]{
-	border: 1px solid #69696930;
+	border: 1px solid #e0e5e2;
+	
+
     padding: 4px 8px;
-    border-radius: 25px;
-    width: 300px;
-    height: 50px;
+    border-radius: 50px;
+    width: 380px;
+    height: 52px;
 }	  
 .btn1{
 	display: flex;
@@ -686,9 +689,8 @@ color: #AAAAAA;
 	border-radius: 50px;
 	 padding: 15px 25px;
     margin-top: -52px;
-    border: 0;
     transition: 0.3s;
-    margin-left: -36px;
+    margin-left: -25px;
 
     box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
 
@@ -758,5 +760,21 @@ color: #AAAAAA;
     color: #fff;	
     background: rgb(58, 193, 98);
 
+}
+.uparrow{
+	position: fixed;
+	text-align: center;
+	color: #fff;
+    right: 20px;
+    bottom: -2px;
+    z-index: 996;
+    background: #5fcf80;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+.uparrow i{
+	line-height: 2.5;
 }
 
